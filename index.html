@@ -1,162 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experienced Full-stack Developer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="text-container">
-                <h1>Experienced Full-stack Developer</h1>
-                <h1>MJ</h1>
-                <p>Mastery of Java, Node.js, Angular, and NextJS. Architect innovative, high-performance solutions across diverse platforms.</p>
-                <div class="buttons">
-                    <a href="https://gamma.app" class="button primary">View Resume</a>
-                    <a href="https://gamma.app" class="button secondary">Hire Me</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Default theme */
+      :root {
+        --theme-color: #57c937; /* Tailwind's gray-700 */
+
+        --theme-font: 20px;
+
+        --theme-start: #57c937; /* Tailwind's indigo-600 */
+        --theme-end: #e6ce58;
+      }
+      .theme-bg {
+        background-color: var(--theme-color);
+      }
+      .theme-text {
+        color: var(--theme-color);
+      }
+
+      .theme-font {
+        font-size: var(--theme-font);
+      }
+
+      .dynamic-gradient {
+        background: linear-gradient(
+          to right,
+          var(--theme-start),
+          var(--theme-end)
+        );
+      }
+
+      .parent-container {
+        margin-top: 40%;
+        width: 80%;
+        /* height: 170vh; */
+
+        overflow: visible; /* Ensure content isn't clipped */
+        
+      }
+
+      .parent-container .layout-padding {
+        padding-top: 20%;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <div class="h-screen flex items-center justify-center">
+      <!-- parent-container -->
+      <!-- w-4/5 min-h-screen overflow-visible mx-auto mt-40 -->
+      <div class="parent-container pb-6  bg-gray-900  w-4/5 min-h-screen overflow-visible ">
+        <!-- FIRST LAYOUT STARTS -->
+        <div class="min-h-[75vh] flex items-center justify-center">
+          <div class="text-center layout-padding">
+            <div class="relative">
+              <div
+                class="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+              >
+                <div
+                  class="w-48 h-48 bg-gradient-to-r dynamic-gradient rounded-full flex items-center justify-center relative"
+                >
+                  <img
+                    src="assets/hero-4.png"
+                    alt="Profile Picture"
+                    class="w-36 h-34 absolute z-10 -bottom-0"
+                  />
                 </div>
+              </div>
+
+              <h1 class="text-7xl font-bold theme-text">Melroy Joyson Lobo</h1>
             </div>
-            <div class="image-container">
-                <img src="cover.png" alt="Full-stack Developer">
+
+            <div class="flex justify-center mt-4 space-x-8">
+              <div>
+                <p class="text-3xl font-bold text-blue-400">3+</p>
+                <p class="theme-font">Years of experience</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-blue-400">6+</p>
+                <p class="theme-font">Projects Completed</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-blue-400">4+</p>
+                <p class="theme-font">Web Application</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-blue-400">2+</p>
+                <p>Mobile Application</p>
+              </div>
             </div>
+
+            <div class="mt-8">
+              <h2 class="text-4xl font-bold">Full-Stack Developer</h2>
+              <p class="mt-4 px-8 max-w-2xl mx-auto theme-font">
+                Sometimes five Imprimaturs are seen together dialogue-wise in
+                the piazza of one title-page, complimenting and ducking each
+                other with their shaven reverences, whether the author, who
+                stands by in perplexity at the foot of his epistle, shall to the
+                press or to the sponge.
+              </p>
+              <button
+                class="mt-20 mb-20 px-4 py-2 theme-bg text-black theme-font rounded hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 custom-shadow"
+              >
+                Download Resume
+              </button>
+            </div>
+          </div>
+
+      
         </div>
-    </header>
+        <!-- FIRST LAYOUT ENDS -->
 
-    <!-- section 2 -->
+        <!-- SECOND LAYOUT STARTS -->
+        <div>
+          <header class="py-8">
+            <div
+              class="max-w-6xl mx-auto px-4 flex justify-center items-center"
+            >
+              <div class="text-center text-3xl font-bold">Trusted By</div>
+              <div class="flex justify-center space-x-8 mt-6 ml-10">
+                <img src="assets/company/kpi.jpg" alt="KPI" class="h-28 w-32" />
+                <img src="assets/company/tm.jpg" alt="Trinity" class="h-28 w-32" />
+                <img src="assets/company/ns.png" alt="Niveus" class="h-28 w-32" />
+                <img src="assets/company/lh.png" alt="Logic Heart" class="h-28 w-32" />
+              </div>
+            </div>
+          </header>
 
-    <div class="container2">
-        <div class="image">
-            <img src="cloud-illustration.png" alt="Cloud Illustration">
-        </div>
-        <div class="content">
-            <h1>Skills and Expertise</h1>
-            <div class="skill">
-                <h2>1. Full-stack Development</h2>
-                <p>Proficient in end-to-end web application development using modern frameworks and libraries.</p>
-            </div>
-            <div class="skill">
-                <h2>2. Cloud Architecture</h2>
-                <p>Experienced in designing scalable, cloud-native solutions on platforms like AWS and Azure.</p>
-            </div>
-            <div class="skill">
-                <h2>3. Performance Optimization</h2>
-                <p>Skilled at improving application speed, reliability, and responsiveness through code refactoring and architectural changes.</p>
-            </div>
-            <div class="skill">
-                <h2>4. DevOps Automation</h2>
-                <p>Expertise in automating build, test, and deployment processes to enable continuous integration and delivery.</p>
-            </div>
-        </div>
-    </div>
+          <!-- Projects Section -->
+          <div class="mx-auto px-4 mt-12">
+            <h2 class="text-center text-4xl font-bold theme-text mt-12 mb-4">
+              Projects
+            </h2>
+            <p class="text-center mb-12 theme-font">
+              Explore my handcrafted web and mobile app projects, showcasing
+              innovative experiments and creative solutions.
+            </p>
 
-    <!-- section 3 -->
-
-    <div class="container3">
-        <h1>Featured Projects</h1>
-        <div class="projects">
-            <div class="project">
-                <h2>Ecommerce Platform</h2>
-                <p>Designed and developed a scalable, mobile-friendly ecommerce platform using React, Redux, and Stripe.</p>
-                <img src="frame1.png" alt="Ecommerce Platform">
-            </div>
-            <div class="project">
-                <h2>Fintech Analytics</h2>
-                <p>Built a data visualization and analysis tool for financial institutions using Angular, D3.js, and AWS services.</p>
-                <img src="frame1.png" alt="Fintech Analytics">
-            </div>
-            <div class="project">
-                <h2>IoT Device Management</h2>
-                <p>Architected a secure, cloud-based system for managing and monitoring IoT devices using Node.js, Docker, and Kubernetes.</p>
-                <img src="frame1.png" alt="IoT Device Management">
-            </div>
-        </div>
-    </div>
+            <!-- grid 8 start -->
 
 
-    <!-- section 4 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              
+                <!-- 1 start -->
+              
+                <div
+                class="bg-gray-800 rounded-lg flex justify-center items-center"
+              >
+             <div class="rounded-lg mx-3 ">
+                <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
+             </div>
 
-    <div class="section4">
-        <div class="experience-container">
-            <h1>Professional Experience</h1>
-            <div class="experience">
-                <div class="experience-item">
-                    <div class="experience-content">
-                        <h2>Lead Developer</h2>
-                        <p>Spearheaded the architecture and development of a mission-critical enterprise application, driving a 35% improvement in performance.</p>
+                <div class=" mr-3">
+                    <div class="flex justify-between items-center w-full">
+                        <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
+                        <div class="text-gray-400">November 21, 2023</div>
+                      </div>
+                  <div>
+                    <div class="mt-2 theme-font">
+                        - Developed responsive web pages using Angular 14,
+                        Bootstrap, and media queries to ensure compatibility across
+                        various devices
+                      </div>
+                      <div class="mt-2 theme-font">
+                        - Implemented microservices architecture using NodeJS to
+                        improve scalability and maintainability of the application.
+                      </div>
+                      <div class="flex justify-end items-center mt-2">
+
+                        <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
+                        <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1 end -->
+
+              <!-- 2 start -->
+              <div
+                class="bg-gray-800 rounded-lg flex justify-center items-center"
+              >
+             <div class="rounded-lg mx-3 ">
+                <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
+             </div>
+
+                <div class=" mr-3">
+                    <div class="flex justify-between items-center w-full">
+                        <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
+                        <div class="text-gray-400">November 21, 2023</div>
+                      </div>
+                  <div>
+                    <div class="mt-2 theme-font">
+                        - Developed responsive web pages using Angular 14,
+                        Bootstrap, and media queries to ensure compatibility across
+                        various devices
+                      </div>
+                      <div class="mt-2 theme-font">
+                        - Implemented microservices architecture using NodeJS to
+                        improve scalability and maintainability of the application.
+                      </div>
+                      <div class="flex justify-end items-center mt-2">
+
+                        <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
+                        <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                        <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 ends -->
+
+
+              <!-- 3 starts  -->
+              <div
+              class="bg-gray-800 rounded-lg flex justify-center items-center"
+            >
+           <div class="rounded-lg mx-3 ">
+              <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
+           </div>
+
+              <div class=" mr-3">
+                  <div class="flex justify-between items-center w-full">
+                      <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
+                      <div class="text-gray-400">November 21, 2023</div>
                     </div>
-                    <div class="experience-number">1</div>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-content">
-                        <h2>Senior Engineer</h2>
-                        <p>Played a key role in scaling a high-traffic ecommerce platform, implementing robust caching and load balancing strategies.</p>
+                <div>
+                  <div class="mt-2 theme-font">
+                      - Developed responsive web pages using Angular 14,
+                      Bootstrap, and media queries to ensure compatibility across
+                      various devices
                     </div>
-                    <div class="experience-number">2</div>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-content">
-                        <h2>Software Consultant</h2>
-                        <p>Provided expert-level guidance to clients on cloud migration, microservices, and DevOps best practices.</p>
+                    <div class="mt-2 theme-font">
+                      - Implemented microservices architecture using NodeJS to
+                      improve scalability and maintainability of the application.
                     </div>
-                    <div class="experience-number">3</div>
+                    <div class="flex justify-end items-center mt-2">
+
+                      <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
+                      <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                    </div>
                 </div>
+              </div>
             </div>
+              <!-- 3 ends -->
+
+              <!-- 4 starts -->
+              <div
+              class="bg-gray-800 rounded-lg flex justify-center items-center"
+            >
+           <div class="rounded-lg mx-3 ">
+              <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
+           </div>
+
+              <div class=" mr-3">
+                  <div class="flex justify-between items-center w-full">
+                      <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
+                      <div class="text-gray-400">November 21, 2023</div>
+                    </div>
+                <div>
+                  <div class="mt-2 theme-font">
+                      - Developed responsive web pages using Angular 14,
+                      Bootstrap, and media queries to ensure compatibility across
+                      various devices
+                    </div>
+                    <div class="mt-2 theme-font">
+                      - Implemented microservices architecture using NodeJS to
+                      improve scalability and maintainability of the application.
+                    </div>
+                    <div class="flex justify-end items-center mt-2">
+
+                      <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
+                      <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4 ends -->
+            </div>
+
+
+
+
+
+            <!-- grid 8 ends -->
+          </div>
+          <!-- Projects Section Ends -->
+
+          <!-- Sidebar Navigation -->
+          <div class="fixed right-8 top-1/4 space-y-4">
+            <div class="flex flex-col items-center space-y-4">
+              <button
+                class="p-4 rounded-full bg-pink-400 text-white theme-btn"
+                data-color="#e14585"
+              ></button>
+              <button
+                class="p-4 rounded-full bg-green-400 text-white theme-btn"
+                data-color="#57c937"
+              ></button>
+              <button
+                class="p-4 rounded-full bg-blue-400 text-white theme-btn"
+                data-color="#249cdd"
+              ></button>
+              <button
+                class="p-4 rounded-full bg-red-400 text-white theme-btn"
+                data-color="#f27028"
+              ></button>
+            </div>
+
+            <div class="color-switcher flex flex-col items-center mt-8"></div>
+          </div>
+
+          <aside
+            class="fixed top-1/2 right-4 transform -translate-y-1/2 -translate-x-28"
+          >
+            <nav class="flex flex-col space-y-4">
+              <a href="#home" class="bg-green-500 p-3 rounded-lg">
+                <img
+                  src="assets/icons8-home.svg"
+                  alt="Home"
+                  height="30"
+                  width="30"
+                />
+              </a>
+              <a href="#home" class="bg-green-500 p-3 rounded-lg">
+                <img
+                  src="assets/icons8-admin.png"
+                  alt="Home"
+                  height="35"
+                  width="35"
+                />
+              </a>
+              <a href="#home" class="bg-green-500 p-3 rounded-lg">
+                <img
+                  src="assets/icons8-winners.png"
+                  alt="Home"
+                  height="35"
+                  width="35"
+                />
+              </a>
+              <!-- <a href="#home" class="bg-green-500 p-3 rounded-lg">
+                <img src="assets/icons8-home.svg" alt="Home" height="30" width="30" />
+              </a>
+              <a href="#home" class="bg-green-500 p-3 rounded-lg">
+                <img src="assets/icons8-home.svg" alt="Home" height="30" width="30" /> -->
+              <!-- </a> -->
+              <!-- <a href="#about" class="bg-gray-700 p-3 rounded-full">
+                <img src="about-icon.png" alt="About" class="h-6" />
+              </a>
+              <a href="#projects" class="bg-gray-700 p-3 rounded-full">
+                <img src="projects-icon.png" alt="Projects" class="h-6" />
+              </a>
+              <a href="#contact" class="bg-gray-700 p-3 rounded-full">
+                <img src="contact-icon.png" alt="Contact" class="h-6" /> -->
+              <!-- </a> -->
+            </nav>
+          </aside>
         </div>
-
+        <!-- SECOND LAYOUT ENDS -->
+      </div>
+      <!-- parent-container ends -->
     </div>
+  </body>
 
-<!-- 
-    section 5 -->
-    <div class="section5">
-        <div class="">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeButtons = document.querySelectorAll(".theme-btn");
 
-            <img src="watermark.jpg" alt="Cover Image" class="main-image">
-          
-            <div class="card">
-                <div class="card-header">
-                    <span class="icon">W</span>
-                    <h2>Work Experience</h2>
-                    <p class="subheading">Primary Sample</p>
-                </div>
-                <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="icon">R</span>
-                    <h2>Work Experience</h2>
-                    <p class="subheading">Secondary Sample</p>
-                </div>
-                <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="icon">F</span>
-                    <p class="subheading">Secondary Text</p>
-                    <h2>B & Kind Opanite</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="icon">E</span>
-                    <p class="subheading">Secondary Text</p>
-                    <h2>Iain Codnitefe</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-
-
-   
-
-
-</body>
+      themeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const color = button.getAttribute("data-color");
+          document.documentElement.style.setProperty("--theme-color", color);
+          document.documentElement.style.setProperty("--theme-start", color);
+          document.documentElement.style.setProperty("--theme-font", "20px");
+        });
+      });
+    });
+  </script>
 </html>
