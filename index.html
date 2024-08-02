@@ -38,25 +38,24 @@
       }
 
       .parent-container {
-        margin-top: 40%;
         width: 80%;
         /* height: 170vh; */
 
         overflow: visible; /* Ensure content isn't clipped */
-        
       }
 
       .parent-container .layout-padding {
         padding-top: 80%;
-
       }
     </style>
   </head>
-  <body class="bg-black text-white">
+  <body oncontextmenu="return false;" class="bg-black text-white">
     <div class="h-screen flex items-center justify-center">
       <!-- parent-container -->
       <!-- w-4/5 min-h-screen overflow-visible mx-auto mt-40 -->
-      <div class="parent-container pb-6  bg-gray-900  w-4/5 min-h-screen overflow-visible ">
+      <div
+        class="parent-container pb-6 bg-gray-900 w-4/5 min-h-screen overflow-visible"
+      >
         <!-- FIRST LAYOUT STARTS -->
         <div class="min-h-[75vh] flex items-center justify-center">
           <div class="text-center layout-padding">
@@ -113,8 +112,6 @@
               </button>
             </div>
           </div>
-
-      
         </div>
         <!-- FIRST LAYOUT ENDS -->
 
@@ -127,9 +124,21 @@
               <div class="text-center text-3xl font-bold">Trusted By</div>
               <div class="flex justify-center space-x-8 mt-6 ml-10">
                 <img src="assets/company/kpi.jpg" alt="KPI" class="h-28 w-32" />
-                <img src="assets/company/tm.jpg" alt="Trinity" class="h-28 w-32" />
-                <img src="assets/company/ns.png" alt="Niveus" class="h-28 w-32" />
-                <img src="assets/company/lh.png" alt="Logic Heart" class="h-28 w-32" />
+                <img
+                  src="assets/company/tm.jpg"
+                  alt="Trinity"
+                  class="h-28 w-32"
+                />
+                <img
+                  src="assets/company/ns.png"
+                  alt="Niveus"
+                  class="h-28 w-32"
+                />
+                <img
+                  src="assets/company/lh.png"
+                  alt="Logic Heart"
+                  class="h-28 w-32"
+                />
               </div>
             </div>
           </header>
@@ -146,42 +155,66 @@
 
             <!-- grid 8 start -->
 
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              
-                <!-- 1 start -->
-              
-                <div
+              <!-- 1 start -->
+
+              <div
                 class="bg-gray-800 rounded-lg flex justify-center items-center"
               >
-             <div class="rounded-lg mx-3 ">
-                <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
-             </div>
+                <div class="rounded-lg mx-3">
+                  <img
+                    src="assets/project/rentalshare.png"
+                    alt="KPI"
+                    class="h-48 md:w-80 object-cover rounded-lg"
+                  />
+                </div>
 
-                <div class=" mr-3">
-                    <div class="flex justify-between items-center w-full">
-                        <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
-                        <div class="text-gray-400">November 21, 2023</div>
-                      </div>
+                <div class="mr-3">
+                  <div class="flex justify-between items-center w-full">
+                    <div
+                      class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
+                    >
+                      Rental Share
+                    </div>
+                    <div class="text-gray-400">November 21, 2023</div>
+                  </div>
                   <div>
-                    <div class="mt-2 theme-font">
-                        - Developed responsive web pages using Angular 14,
-                        Bootstrap, and media queries to ensure compatibility across
-                        various devices
-                      </div>
-                      <div class="mt-2 theme-font">
-                        - Implemented microservices architecture using NodeJS to
-                        improve scalability and maintainability of the application.
-                      </div>
-                      <div class="flex justify-end items-center mt-2">
-
-                        <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
-                        <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      </div>
+                    <div class="text-2xl mt-2 font-bold">
+                      Responsive web app, scalable microservices, efficient
+                      APIs, robust backend, seamless database
+                    </div>
+                    <div class="flex justify-end items-center mt-2">
+                      <span
+                        ><img
+                          src="assets/tech/angular.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/node.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/sequelize.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/mysql.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/aws.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/figma.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -192,118 +225,204 @@
               <div
                 class="bg-gray-800 rounded-lg flex justify-center items-center"
               >
-             <div class="rounded-lg mx-3 ">
-                <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
-             </div>
+                <div class="rounded-lg mx-3">
+                  <img
+                    src="assets/project/hkpf.svg"
+                    alt="KPI"
+                    class="h-48 md:w-80 object-cover rounded-lg"
+                  />
+                </div>
 
-                <div class=" mr-3">
-                    <div class="flex justify-between items-center w-full">
-                        <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
-                        <div class="text-gray-400">November 21, 2023</div>
-                      </div>
+                <div class="mr-3">
+                  <div class="flex justify-between items-center w-full">
+                    <div
+                      class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
+                    >
+                      HKPF - (Smart City)
+                    </div>
+                    <div class="text-gray-400">September 30, 2023</div>
+                  </div>
                   <div>
-                    <div class="mt-2 theme-font">
-                        - Developed responsive web pages using Angular 14,
-                        Bootstrap, and media queries to ensure compatibility across
-                        various devices
-                      </div>
-                      <div class="mt-2 theme-font">
-                        - Implemented microservices architecture using NodeJS to
-                        improve scalability and maintainability of the application.
-                      </div>
-                      <div class="flex justify-end items-center mt-2">
+                    <div class="text-2xl mt-2 font-bold">
+                      Angular, Spring Boot, microservices, reactive programming,
+                      event-driven architecture
+                    </div>
 
-                        <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
-                        <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                        <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      </div>
+                    <div class="flex justify-end items-center mt-2">
+                      <span
+                        ><img
+                          src="assets/tech/java.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/spring.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/angular.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/msserver.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/git.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/jira.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/jenkins.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- 2 ends -->
 
-
               <!-- 3 starts  -->
               <div
-              class="bg-gray-800 rounded-lg flex justify-center items-center"
-            >
-           <div class="rounded-lg mx-3 ">
-              <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
-           </div>
+                class="bg-gray-800 rounded-lg flex justify-center items-center"
+              >
+                <div class="rounded-lg mx-3">
+                  <img
+                    src="assets/rentalshare.png"
+                    alt="KPI"
+                    class="h-48 md:w-80 object-cover rounded-lg"
+                  />
+                </div>
 
-              <div class=" mr-3">
+                <div class="mr-3">
                   <div class="flex justify-between items-center w-full">
-                      <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
-                      <div class="text-gray-400">November 21, 2023</div>
+                    <div
+                      class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
+                    >
+                      Rental Share
                     </div>
-                <div>
-                  <div class="mt-2 theme-font">
+                    <div class="text-gray-400">November 21, 2023</div>
+                  </div>
+                  <div>
+                    <div class="mt-2 theme-font">
                       - Developed responsive web pages using Angular 14,
-                      Bootstrap, and media queries to ensure compatibility across
-                      various devices
+                      Bootstrap, and media queries to ensure compatibility
+                      across various devices
                     </div>
                     <div class="mt-2 theme-font">
                       - Implemented microservices architecture using NodeJS to
-                      improve scalability and maintainability of the application.
+                      improve scalability and maintainability of the
+                      application.
                     </div>
                     <div class="flex justify-end items-center mt-2">
-
-                      <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
-                      <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                      <span
+                        ><img
+                          src="assets/tech/angular.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/node.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/sequelize.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/mysql.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/aws.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/figma.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
                     </div>
+                  </div>
                 </div>
               </div>
-            </div>
               <!-- 3 ends -->
 
               <!-- 4 starts -->
               <div
-              class="bg-gray-800 rounded-lg flex justify-center items-center"
-            >
-           <div class="rounded-lg mx-3 ">
-              <img src="assets/rentalshare.png" alt="KPI" class=" h-48 md:w-80   object-cover rounded-lg" />
-           </div>
+                class="bg-gray-800 rounded-lg flex justify-center items-center"
+              >
+                <div class="rounded-lg mx-3">
+                  <img
+                    src="assets/rentalshare.png"
+                    alt="KPI"
+                    class="h-48 md:w-80 object-cover rounded-lg"
+                  />
+                </div>
 
-              <div class=" mr-3">
+                <div class="mr-3">
                   <div class="flex justify-between items-center w-full">
-                      <div class=" font-bold border-2 border-gray-700  theme-text  px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">Rental Share</div>
-                      <div class="text-gray-400">November 21, 2023</div>
+                    <div
+                      class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
+                    >
+                      Rental Share
                     </div>
-                <div>
-                  <div class="mt-2 theme-font">
-                      - Developed responsive web pages using Angular 14,
-                      Bootstrap, and media queries to ensure compatibility across
-                      various devices
-                    </div>
+                    <div class="text-gray-400">November 21, 2023</div>
+                  </div>
+                  <div>
                     <div class="mt-2 theme-font">
-                      - Implemented microservices architecture using NodeJS to
-                      improve scalability and maintainability of the application.
+                      Responsive web app, scalable microservices, efficient
+                      APIs, robust backend, seamless database
                     </div>
-                    <div class="flex justify-end items-center mt-2">
 
-                      <span ><img src="assets/tech/angular.svg" class="w-8 h- rounded-sm mx-2"></span>
-                      <span><img src="assets/tech/node.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/sequelize.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/mysql.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/aws.svg"  class="w-8 h- rounded-sm  mx-2"></span>
-                      <span><img src="assets/tech/figma.svg"  class="w-8 h- rounded-sm  mx-2"></span>
+                    <div class="flex justify-end items-center mt-2">
+                      <span
+                        ><img
+                          src="assets/tech/angular.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/node.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/sequelize.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/mysql.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/aws.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
+                      <span
+                        ><img
+                          src="assets/tech/figma.svg"
+                          class="w-8 h- rounded-sm mx-2"
+                      /></span>
                     </div>
+                  </div>
                 </div>
               </div>
+              <!-- 4 ends -->
             </div>
-            <!-- 4 ends -->
-            </div>
-
-
-
-
 
             <!-- grid 8 ends -->
           </div>
@@ -386,6 +505,15 @@
   </body>
 
   <script>
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+      }
+    });
+
     document.addEventListener("DOMContentLoaded", () => {
       const themeButtons = document.querySelectorAll(".theme-btn");
 
