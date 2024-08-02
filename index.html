@@ -11,11 +11,9 @@
     <style>
       /* Default theme */
       :root {
-        --theme-color: #57c937; /* Tailwind's gray-700 */
-
+        --theme-color: #57c937;
         --theme-font: 20px;
-
-        --theme-start: #57c937; /* Tailwind's indigo-600 */
+        --theme-start: #57c937;
         --theme-end: #e6ce58;
       }
       .theme-bg {
@@ -24,11 +22,9 @@
       .theme-text {
         color: var(--theme-color);
       }
-
       .theme-font {
         font-size: var(--theme-font);
       }
-
       .dynamic-gradient {
         background: linear-gradient(
           to right,
@@ -36,77 +32,67 @@
           var(--theme-end)
         );
       }
-
       .parent-container {
-        width: 80%;
-        /* height: 170vh; */
-
-        overflow: visible; /* Ensure content isn't clipped */
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
       }
-
-      .parent-container .layout-padding {
-        padding-top: 80%;
+      .layout-padding {
+        padding-top: 4rem; /* Adjusted for better visibility */
       }
     </style>
   </head>
-  <body oncontextmenu="return false;" class="bg-black text-white">
-    <div class="h-screen flex items-center justify-center">
-      <!-- parent-container -->
-      <!-- w-4/5 min-h-screen overflow-visible mx-auto mt-40 -->
-      <div
-        class="parent-container pb-6 bg-gray-900 w-4/5 min-h-screen overflow-visible"
-      >
+  <body class="bg-black text-white">
+    <div class="min-h-screen flex flex-col">
+      <div class="parent-container bg-gray-900 flex-grow">
         <!-- FIRST LAYOUT STARTS -->
-        <div class="min-h-[75vh] flex items-center justify-center">
-          <div class="text-center layout-padding">
-            <div class="relative">
-              <div
-                class="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-              >
+        <div
+          class="flex flex-col items-center justify-center min-h-screen py-8"
+        >
+          <div class="relative text-center">
+            <div class="relative w-48 h-48 mx-auto">
+              <div class="absolute inset-0 flex items-center justify-center">
                 <div
-                  class="w-48 h-48 bg-gradient-to-r dynamic-gradient rounded-full flex items-center justify-center relative"
+                  class="w-36 h-36 bg-gradient-to-r dynamic-gradient rounded-full flex items-center justify-center"
                 >
                   <img
                     src="assets/hero-4.png"
                     alt="Profile Picture"
-                    class="w-36 h-34 absolute z-10 -bottom-0"
+                    class="w-24 h-24 rounded-full object-cover"
                   />
                 </div>
               </div>
-
-              <h1 class="text-7xl font-bold theme-text">Melroy Joyson Lobo</h1>
             </div>
-
-            <div class="flex justify-center mt-4 space-x-8">
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold theme-text">
+              Melroy Joyson Lobo
+            </h1>
+            <div class="flex flex-wrap justify-center gap-8 mt-4">
               <div>
-                <p class="text-3xl font-bold text-blue-400">3+</p>
+                <p class="text-2xl sm:text-3xl font-bold text-blue-400">3+</p>
                 <p class="theme-font">Years of experience</p>
               </div>
               <div>
-                <p class="text-3xl font-bold text-blue-400">6+</p>
+                <p class="text-2xl sm:text-3xl font-bold text-blue-400">6+</p>
                 <p class="theme-font">Projects Completed</p>
               </div>
               <div>
-                <p class="text-3xl font-bold text-blue-400">4+</p>
+                <p class="text-2xl sm:text-3xl font-bold text-blue-400">4+</p>
                 <p class="theme-font">Web Application</p>
               </div>
               <div>
-                <p class="text-3xl font-bold text-blue-400">2+</p>
+                <p class="text-2xl sm:text-3xl font-bold text-blue-400">2+</p>
                 <p>Mobile Application</p>
               </div>
             </div>
-
             <div class="mt-8">
-              <h2 class="text-4xl font-bold">Full-Stack Developer</h2>
-              <p class="mt-4 px-8 max-w-2xl mx-auto theme-font">
-                Sometimes five Imprimaturs are seen together dialogue-wise in
-                the piazza of one title-page, complimenting and ducking each
-                other with their shaven reverences, whether the author, who
-                stands by in perplexity at the foot of his epistle, shall to the
-                press or to the sponge.
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+                Full-Stack Developer
+              </h2>
+              <p class="mt-4 px-4 sm:px-8 max-w-lg mx-auto theme-font">
+                Proficient in designing sophisticated IT solutions that boost application agility and performance across various platforms, merging innovation with practical implementation to achieve exceptional technology-driven results.
               </p>
               <button
-                class="mt-20 mb-20 px-4 py-2 theme-bg text-black theme-font rounded hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 custom-shadow"
+                class="mt-8 px-4 py-2 theme-bg text-black theme-font rounded hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
               >
                 Download Resume
               </button>
@@ -116,413 +102,350 @@
         <!-- FIRST LAYOUT ENDS -->
 
         <!-- SECOND LAYOUT STARTS -->
-        <div>
-          <header class="py-8">
-            <div
-              class="max-w-6xl mx-auto px-4 flex justify-center items-center"
-            >
-              <div class="text-center text-3xl font-bold">Trusted By</div>
-              <div class="flex justify-center space-x-8 mt-6 ml-10">
-                <img src="assets/company/kpi.jpg" alt="KPI" class="h-28 w-32" />
-                <img
-                  src="assets/company/tm.jpg"
-                  alt="Trinity"
-                  class="h-28 w-32"
-                />
-                <img
-                  src="assets/company/ns.png"
-                  alt="Niveus"
-                  class="h-28 w-32"
-                />
-                <img
-                  src="assets/company/lh.png"
-                  alt="Logic Heart"
-                  class="h-28 w-32"
-                />
+        <div class="py-8">
+          <div class="py-8 w-full md:w-4/5 lg:w-3/5 mx-auto">
+            <div class="px-4 flex flex-col items-center">
+              <div class="text-center text-3xl font-bold mb-6">Trusted By</div>
+              <div class="flex flex-wrap justify-center gap-8">
+                <img src="assets/company/kpi.jpg" alt="KPI" class="h-24 md:h-28 lg:h-32 w-auto max-w-[120px] object-contain" />
+                <img src="assets/company/tm.jpg" alt="Trinity" class="h-24 md:h-28 lg:h-32 w-auto max-w-[120px] object-contain" />
+                <img src="assets/company/ns.png" alt="Niveus" class="h-24 md:h-28 lg:h-32 w-auto max-w-[120px] object-contain" />
+                <img src="assets/company/lh.png" alt="Logic Heart" class="h-24 md:h-28 lg:h-32 w-auto max-w-[120px] object-contain" />
               </div>
             </div>
-          </header>
-
+          </div>
+          
+          
+          
           <!-- Projects Section -->
-          <div class="mx-auto px-4 mt-12">
-            <h2 class="text-center text-4xl font-bold theme-text mt-12 mb-4">
+          <div class="px-4 mt-12">
+            <h2
+              class="text-center text-3xl sm:text-4xl font-bold theme-text mb-4"
+            >
               Projects
             </h2>
             <p class="text-center mb-12 theme-font">
               Explore my handcrafted web and mobile app projects, showcasing
               innovative experiments and creative solutions.
             </p>
-
-            <!-- grid 8 start -->
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <!-- 1 start -->
-
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <!-- Project Item -->
+              <!-- 1 start  -->
               <div
-                class="bg-gray-800 rounded-lg flex justify-center items-center"
+                class="bg-gray-800 rounded-lg flex flex-col md:flex-row justify-center p-4"
               >
-                <div class="rounded-lg mx-3">
+                <div class="rounded-lg mx-3 flex-shrink-0 items-center">
                   <img
-                    src="assets/project/rentalshare.png"
-                    alt="KPI"
-                    class="h-48 md:w-80 object-cover rounded-lg"
-                  />
+                  src="assets/project/nextapp.svg"
+                  alt="HKPF"
+                  class="h-48  object-cover rounded-lg"
+                />
                 </div>
 
-                <div class="mr-3">
-                  <div class="flex justify-between items-center w-full">
+                <!-- <div class="rounded-lg mx-3">
+                  <img
+                    src="assets/project/hkpf.svg"
+                    alt="HKPF"
+                    class="h-48  object-cover rounded-lg"
+                  />
+                </div> -->
+
+                <div class="flex flex-col justify-between mx-3">
+                  <!-- Title and Date Section -->
+                  <div class="flex items-start justify-between">
                     <div
                       class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
                     >
-                      Rental Share
+                      Yorlem
                     </div>
-                    <div class="text-gray-400">November 21, 2023</div>
+                    <div class="text-gray-400 mt-2">August 01, 2024</div>
                   </div>
-                  <div>
-                    <div class="text-2xl mt-2 font-bold">
-                      Responsive web app, scalable microservices, efficient
-                      APIs, robust backend, seamless database
+
+                  <!-- Description Section -->
+                  <div class="flex items-center justify-center">
+                    <div class="text-2xl font-bold mb-2">
+                      Next.js, TypeScript, server-side rendering, API routes,
+                      modern full-stack development.
                     </div>
-                    <div class="flex justify-end items-center mt-2">
-                      <span
-                        ><img
-                          src="assets/tech/angular.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/node.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/sequelize.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/mysql.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/aws.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/figma.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                    </div>
+                  </div>
+
+                  <!-- Tech Icons Section -->
+                  <div class="flex items-end justify-end">
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/next.svg"
+                        alt="Next"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/prisma.svg"
+                        alt="Prisma"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/clerk.svg"
+                        alt="Clerk"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/postgres.svg"
+                        alt="Postgres"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/clickup.svg"
+                        alt="ClickUp"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
                   </div>
                 </div>
               </div>
+              <!-- 1 start  -->
 
-              <!-- 1 end -->
-
-              <!-- 2 start -->
+              <!-- 2 start  -->
               <div
-                class="bg-gray-800 rounded-lg flex justify-center items-center"
+                class="bg-gray-800 rounded-lg flex flex-col md:flex-row justify-center p-4"
               >
-                <div class="rounded-lg mx-3">
+                <div class="rounded-lg mx-3 flex-shrink-0">
                   <img
                     src="assets/project/hkpf.svg"
-                    alt="KPI"
-                    class="h-48 md:w-80 object-cover rounded-lg"
+                    alt="Honk Ong Police Force"
+                    class="h-48  object-cover rounded-lg"
                   />
                 </div>
 
-                <div class="mr-3">
-                  <div class="flex justify-between items-center w-full">
+                <div class="flex flex-col justify-between mx-3">
+                  <!-- Title and Date Section -->
+                  <div class="flex items-start justify-between">
                     <div
                       class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
                     >
                       HKPF - (Smart City)
                     </div>
-                    <div class="text-gray-400">September 30, 2023</div>
+                    <div class="text-gray-400 mt-2">September 30, 2023</div>
                   </div>
-                  <div>
-                    <div class="text-2xl mt-2 font-bold">
-                      Angular, Spring Boot, microservices, reactive programming,
-                      event-driven architecture
-                    </div>
 
-                    <div class="flex justify-end items-center mt-2">
-                      <span
-                        ><img
-                          src="assets/tech/java.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/spring.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/angular.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/msserver.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/git.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/jira.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/jenkins.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
+                  <!-- Description Section -->
+                  <div class="flex items-center justify-center">
+                    <div class="text-2xl font-bold mb-2">
+                      Responsive web app, scalable microservices, efficient
+                      APIs, robust backend, seamless database
                     </div>
+                  </div>
+
+                  <!-- Tech Icons Section -->
+                  <div class="flex items-end justify-end">
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/java.svg"
+                        alt="Java"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/spring.svg"
+                        alt="Spring"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/angular.svg"
+                        alt="Angular"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/msserver.svg"
+                        alt="MS Server"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/jenkins.svg"
+                        alt="Jenkins"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/git.svg"
+                        alt="GIT"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
+                    <span class="mx-2"
+                      ><img
+                        src="assets/tech/jira.svg"
+                        alt="Jira"
+                        class="w-8 h-8 rounded-sm"
+                    /></span>
                   </div>
                 </div>
               </div>
               <!-- 2 ends -->
 
-              <!-- 3 starts  -->
+              <!-- 3 start  -->
               <div
-                class="bg-gray-800 rounded-lg flex justify-center items-center"
+                class="bg-gray-800 rounded-lg flex flex-col md:flex-row justify-center p-4"
               >
-                <div class="rounded-lg mx-3">
+                <div class="rounded-lg mx-3 flex-shrink-0">
                   <img
-                    src="assets/rentalshare.png"
-                    alt="KPI"
-                    class="h-48 md:w-80 object-cover rounded-lg"
+                    src="assets/project/artist.svg"
+                    alt="Rental Share"
+                    class="h-48  object-cover rounded-lg"
                   />
                 </div>
 
-                <div class="mr-3">
-                  <div class="flex justify-between items-center w-full">
+                <div class="flex flex-col justify-between mx-3">
+                  <!-- Title and Date Section -->
+                  <div class="flex items-start justify-between">
                     <div
                       class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
                     >
-                      Rental Share
+                      Artist (v1)
                     </div>
-                    <div class="text-gray-400">November 21, 2023</div>
-                  </div>
-                  <div>
-                    <div class="mt-2 theme-font">
-                      - Developed responsive web pages using Angular 14,
-                      Bootstrap, and media queries to ensure compatibility
-                      across various devices
-                    </div>
-                    <div class="mt-2 theme-font">
-                      - Implemented microservices architecture using NodeJS to
-                      improve scalability and maintainability of the
-                      application.
-                    </div>
-                    <div class="flex justify-end items-center mt-2">
-                      <span
-                        ><img
-                          src="assets/tech/angular.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/node.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/sequelize.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/mysql.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/aws.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
-                      <span
-                        ><img
-                          src="assets/tech/figma.svg"
-                          class="w-8 h- rounded-sm mx-2"
-                      /></span>
+                    <div class="text-gray-400 mt-2 md:mt-0">
+                      December 21, 2022
                     </div>
                   </div>
+                  <div class="flex items-center justify-center">
+                    <div class="text-2xl font-bold mb-2">
+                      Flutter, Firebase, Swagger, mobile development, real-time
+                      backend integration.
+                    </div>
+                  </div>
+
+                  <div class="flex items-end justify-end">
+			  
+                    <span class="mx-2"><img src="assets/tech/flutter.svg" alt="Flutter" class="w-8 h-8 rounded-sm" /></span>
+                    <span class="mx-2"><img src="assets/tech/firebase.svg" alt="Firebase" class="w-8 h-8 rounded-sm" /></span>
+                    <span class="mx-2"><img src="assets/tech/git.svg" alt="GIT" class="w-8 h-8 rounded-sm" /></span>
+                  </div>
+                
                 </div>
               </div>
               <!-- 3 ends -->
 
-              <!-- 4 starts -->
+              <!-- 4 start  -->
               <div
-                class="bg-gray-800 rounded-lg flex justify-center items-center"
+                class="bg-gray-800 rounded-lg flex flex-col md:flex-row justify-center  p-4"
               >
-                <div class="rounded-lg mx-3">
+              <div class="rounded-lg mx-3 flex-shrink-0 items-center ">
                   <img
-                    src="assets/rentalshare.png"
-                    alt="KPI"
-                    class="h-48 md:w-80 object-cover rounded-lg"
+                    src="assets/project/rentalshare.svg"
+                    alt="Rental Share"
+                    class="h-48  object-cover rounded-lg"
                   />
                 </div>
 
-                <div class="mr-3">
-                  <div class="flex justify-between items-center w-full">
-                    <div
-                      class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900"
-                    >
+                <div class="flex flex-col  justify-between mx-3">
+                  <!-- Title and Date Section -->
+                  <div class="flex items-start justify-between">
+                    <div class="font-bold border-2 border-gray-700 theme-text px-3 py-1 bg-[#222225] uppercase hover:bg-green-900">
+                     
                       Rental Share
                     </div>
-                    <div class="text-gray-400">November 21, 2023</div>
+                    <div class="text-gray-400 mt-2 md:mt-0">
+                      November 21, 2023
+                    </div>
                   </div>
-                  <div>
-                    <div class="mt-2 theme-font">
+                  <div class="flex items-center justify-center">
+                    <div class="text-2xl font-bold mb-2">
                       Responsive web app, scalable microservices, efficient
                       APIs, robust backend, seamless database
                     </div>
-
-                    <div class="flex justify-end items-center mt-2">
-                      <span
+                    </div>
+                    <div class="flex items-end justify-end">
+                      <span class="mx-2"
                         ><img
                           src="assets/tech/angular.svg"
-                          class="w-8 h- rounded-sm mx-2"
+                          alt="Angular"
+                          class="w-8 h-8 rounded-sm"
                       /></span>
-                      <span
+                      <span class="mx-2"
                         ><img
                           src="assets/tech/node.svg"
-                          class="w-8 h- rounded-sm mx-2"
+                          alt="Node"
+                          class="w-8 h-8 rounded-sm"
                       /></span>
-                      <span
+                      <span class="mx-2"
                         ><img
                           src="assets/tech/sequelize.svg"
-                          class="w-8 h- rounded-sm mx-2"
+                          alt="Sequelize"
+                          class="w-8 h-8 rounded-sm"
                       /></span>
-                      <span
+                      <span class="mx-2"
                         ><img
                           src="assets/tech/mysql.svg"
-                          class="w-8 h- rounded-sm mx-2"
+                          alt="MySQL"
+                          class="w-8 h-8 rounded-sm"
                       /></span>
-                      <span
+                      <span class="mx-2"
                         ><img
                           src="assets/tech/aws.svg"
-                          class="w-8 h- rounded-sm mx-2"
+                          alt="AWS"
+                          class="w-8 h-8 rounded-sm"
                       /></span>
-                      <span
+                      <span class="mx-2"
                         ><img
                           src="assets/tech/figma.svg"
-                          class="w-8 h- rounded-sm mx-2"
+                          alt="Figma"
+                          class="w-8 h-8 rounded-sm"
                       /></span>
-                    </div>
+                 
                   </div>
                 </div>
               </div>
               <!-- 4 ends -->
             </div>
-
-            <!-- grid 8 ends -->
           </div>
           <!-- Projects Section Ends -->
 
           <!-- Sidebar Navigation -->
-          <div class="fixed right-8 top-1/4 space-y-4">
-            <div class="flex flex-col items-center space-y-4">
-              <button
-                class="p-4 rounded-full bg-pink-400 text-white theme-btn"
-                data-color="#e14585"
-              ></button>
-              <button
-                class="p-4 rounded-full bg-green-400 text-white theme-btn"
-                data-color="#57c937"
-              ></button>
-              <button
-                class="p-4 rounded-full bg-blue-400 text-white theme-btn"
-                data-color="#249cdd"
-              ></button>
-              <button
-                class="p-4 rounded-full bg-red-400 text-white theme-btn"
-                data-color="#f27028"
-              ></button>
-            </div>
+  
 
-            <div class="color-switcher flex flex-col items-center mt-8"></div>
-          </div>
+          <!-- Navigation Sidebar -->
+          <!-- <aside class="fixed right-4 top-4 flex flex-col space-y-4 mt-4"> -->
 
-          <aside
-            class="fixed top-1/2 right-4 transform -translate-y-1/2 -translate-x-28"
-          >
-            <nav class="flex flex-col space-y-4">
+            <aside class="fixed right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4">
+            <!-- Navigation Menu -->
+            <nav class="flex flex-col items-center space-y-4 mb-10">
               <a href="#home" class="bg-green-500 p-3 rounded-lg">
-                <img
-                  src="assets/icons8-home.svg"
-                  alt="Home"
-                  height="30"
-                  width="30"
-                />
+                <img src="assets/icons8-home.svg" alt="Home" class="w-8 h-8" />
               </a>
-              <a href="#home" class="bg-green-500 p-3 rounded-lg">
-                <img
-                  src="assets/icons8-admin.png"
-                  alt="Home"
-                  height="35"
-                  width="35"
-                />
+              <a href="#admin" class="bg-green-500 p-3 rounded-lg">
+                <img src="assets/icons8-admin.png" alt="Admin" class="w-8 h-8" />
               </a>
-              <a href="#home" class="bg-green-500 p-3 rounded-lg">
-                <img
-                  src="assets/icons8-winners.png"
-                  alt="Home"
-                  height="35"
-                  width="35"
-                />
+              <a href="#winners" class="bg-green-500 p-3 rounded-lg">
+                <img src="assets/icons8-winners.png" alt="Winners" class="w-8 h-8" />
               </a>
-              <!-- <a href="#home" class="bg-green-500 p-3 rounded-lg">
-                <img src="assets/icons8-home.svg" alt="Home" height="30" width="30" />
-              </a>
-              <a href="#home" class="bg-green-500 p-3 rounded-lg">
-                <img src="assets/icons8-home.svg" alt="Home" height="30" width="30" /> -->
-              <!-- </a> -->
-              <!-- <a href="#about" class="bg-gray-700 p-3 rounded-full">
-                <img src="about-icon.png" alt="About" class="h-6" />
-              </a>
-              <a href="#projects" class="bg-gray-700 p-3 rounded-full">
-                <img src="projects-icon.png" alt="Projects" class="h-6" />
-              </a>
-              <a href="#contact" class="bg-gray-700 p-3 rounded-full">
-                <img src="contact-icon.png" alt="Contact" class="h-6" /> -->
-              <!-- </a> -->
             </nav>
+          
+            <!-- Color Buttons -->
+            <div class="flex flex-col items-center space-y-4">
+              <button class="p-4 rounded-full bg-pink-400 text-white theme-btn" data-color="#e14585"></button>
+              <button class="p-4 rounded-full bg-green-400 text-white theme-btn" data-color="#57c937"></button>
+              <button class="p-4 rounded-full bg-blue-400 text-white theme-btn" data-color="#249cdd"></button>
+              <button class="p-4 rounded-full bg-red-400 text-white theme-btn" data-color="#f27028"></button>
+            </div>
           </aside>
+          
+          
         </div>
         <!-- SECOND LAYOUT ENDS -->
       </div>
-      <!-- parent-container ends -->
     </div>
   </body>
-
   <script>
-    document.addEventListener("contextmenu", function (e) {
-      e.preventDefault();
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        e.preventDefault();
-      }
-    });
-
     document.addEventListener("DOMContentLoaded", () => {
       const themeButtons = document.querySelectorAll(".theme-btn");
-
       themeButtons.forEach((button) => {
         button.addEventListener("click", () => {
           const color = button.getAttribute("data-color");
           document.documentElement.style.setProperty("--theme-color", color);
           document.documentElement.style.setProperty("--theme-start", color);
-          document.documentElement.style.setProperty("--theme-font", "20px");
         });
       });
     });
